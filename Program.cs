@@ -1,0 +1,29 @@
+﻿using System;
+using System.IO;
+using TimestampScheduler.Parser;
+using TimestampScheduler.Model;
+using TimestampScheduler.Service;
+
+var inputFilePath = Path.Combine("Data", "in.txt");
+var (dataTuples, transactions, schedules) = Parser.ParseInputFile(inputFilePath);
+
+//Console.WriteLine("Data Tuples:");
+//foreach (var tuple in dataTuples)
+//    Console.WriteLine(tuple);
+
+//Console.WriteLine("\nTransactions:");
+//foreach (var tx in transactions)
+//    Console.WriteLine($"{tx.Id}: {tx.Timestamp}");
+
+//Console.WriteLine("\nSchedules:");
+//foreach (var schedule in schedules)
+//    Console.WriteLine(schedule);
+
+foreach (var schedule in schedules)
+{
+    var scheduler = new TsScheduler();
+
+    scheduler.Initialize(dataTuples, transactions, schedule);
+
+    scheduler.CheckSchedule();
+}

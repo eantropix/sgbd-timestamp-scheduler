@@ -1,0 +1,27 @@
+﻿using System.IO;
+using System;
+using System.Collections.Generic;
+
+namespace TimestampScheduler.Parser
+{
+    public static class OperationLogger
+    {
+        private static readonly string DataDir = Path.Combine("Data");
+
+        public static void LogOperation(string tupleId, string operationType, string transactionId)
+        {
+            if (tupleId != "A") return;
+            var filePath = Path.Combine(DataDir, "A.txt");
+            var logEntry = $"{DateTime.Now:yyyy-MM-dd HH:mm:ss} - {operationType}({transactionId})\n";
+            File.AppendAllText(filePath, logEntry);
+        }
+
+        public static void LogOperations(IEnumerable<(string tupleId, string operationType, string transactionId)> operations)
+        {
+            foreach (var op in operations)
+            {
+                LogOperation(op.tupleId, op.operationType, op.transactionId);
+            }
+        }
+    }
+}

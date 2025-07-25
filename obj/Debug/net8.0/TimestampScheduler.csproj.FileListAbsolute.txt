@@ -1,0 +1,15 @@
+C:\Users\PC\source\repos\uni\sgbd\TimestampScheduler\bin\Debug\net8.0\TimestampScheduler.exe
+C:\Users\PC\source\repos\uni\sgbd\TimestampScheduler\bin\Debug\net8.0\TimestampScheduler.deps.json
+C:\Users\PC\source\repos\uni\sgbd\TimestampScheduler\bin\Debug\net8.0\TimestampScheduler.runtimeconfig.json
+C:\Users\PC\source\repos\uni\sgbd\TimestampScheduler\bin\Debug\net8.0\TimestampScheduler.dll
+C:\Users\PC\source\repos\uni\sgbd\TimestampScheduler\bin\Debug\net8.0\TimestampScheduler.pdb
+C:\Users\PC\source\repos\uni\sgbd\TimestampScheduler\obj\Debug\net8.0\TimestampScheduler.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\source\repos\uni\sgbd\TimestampScheduler\obj\Debug\net8.0\TimestampScheduler.AssemblyInfoInputs.cache
+C:\Users\PC\source\repos\uni\sgbd\TimestampScheduler\obj\Debug\net8.0\TimestampScheduler.AssemblyInfo.cs
+C:\Users\PC\source\repos\uni\sgbd\TimestampScheduler\obj\Debug\net8.0\TimestampScheduler.csproj.CoreCompileInputs.cache
+C:\Users\PC\source\repos\uni\sgbd\TimestampScheduler\obj\Debug\net8.0\TimestampScheduler.dll
+C:\Users\PC\source\repos\uni\sgbd\TimestampScheduler\obj\Debug\net8.0\refint\TimestampScheduler.dll
+C:\Users\PC\source\repos\uni\sgbd\TimestampScheduler\obj\Debug\net8.0\TimestampScheduler.pdb
+C:\Users\PC\source\repos\uni\sgbd\TimestampScheduler\obj\Debug\net8.0\TimestampScheduler.genruntimeconfig.cache
+C:\Users\PC\source\repos\uni\sgbd\TimestampScheduler\obj\Debug\net8.0\ref\TimestampScheduler.dll
+C:\Users\PC\source\repos\uni\sgbd\TimestampScheduler\bin\Debug\net8.0\Data\in.txt

@@ -1,0 +1,200 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\PC\\source\\repos\\uni\\sgbd\\TimestampScheduler\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1CF05C80-7268-4FF9-80C4-4A224BB13EDF}|TimestampScheduler.csproj|c:\\users\\pc\\source\\repos\\uni\\sgbd\\timestampscheduler\\service\\tsscheduler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CF05C80-7268-4FF9-80C4-4A224BB13EDF}|TimestampScheduler.csproj|solutionrelative:service\\tsscheduler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CF05C80-7268-4FF9-80C4-4A224BB13EDF}|TimestampScheduler.csproj|c:\\users\\pc\\source\\repos\\uni\\sgbd\\timestampscheduler\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CF05C80-7268-4FF9-80C4-4A224BB13EDF}|TimestampScheduler.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CF05C80-7268-4FF9-80C4-4A224BB13EDF}|TimestampScheduler.csproj|c:\\users\\pc\\source\\repos\\uni\\sgbd\\timestampscheduler\\parser\\operationlogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CF05C80-7268-4FF9-80C4-4A224BB13EDF}|TimestampScheduler.csproj|solutionrelative:parser\\operationlogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CF05C80-7268-4FF9-80C4-4A224BB13EDF}|TimestampScheduler.csproj|c:\\users\\pc\\source\\repos\\uni\\sgbd\\timestampscheduler\\data\\in.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{1CF05C80-7268-4FF9-80C4-4A224BB13EDF}|TimestampScheduler.csproj|solutionrelative:data\\in.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CF05C80-7268-4FF9-80C4-4A224BB13EDF}|TimestampScheduler.csproj|c:\\users\\pc\\source\\repos\\uni\\sgbd\\timestampscheduler\\data\\out.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{1CF05C80-7268-4FF9-80C4-4A224BB13EDF}|TimestampScheduler.csproj|solutionrelative:data\\out.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CF05C80-7268-4FF9-80C4-4A224BB13EDF}|TimestampScheduler.csproj|c:\\users\\pc\\source\\repos\\uni\\sgbd\\timestampscheduler\\model\\operation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CF05C80-7268-4FF9-80C4-4A224BB13EDF}|TimestampScheduler.csproj|solutionrelative:model\\operation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CF05C80-7268-4FF9-80C4-4A224BB13EDF}|TimestampScheduler.csproj|c:\\users\\pc\\source\\repos\\uni\\sgbd\\timestampscheduler\\model\\schedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CF05C80-7268-4FF9-80C4-4A224BB13EDF}|TimestampScheduler.csproj|solutionrelative:model\\schedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CF05C80-7268-4FF9-80C4-4A224BB13EDF}|TimestampScheduler.csproj|c:\\users\\pc\\source\\repos\\uni\\sgbd\\timestampscheduler\\parser\\parser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CF05C80-7268-4FF9-80C4-4A224BB13EDF}|TimestampScheduler.csproj|solutionrelative:parser\\parser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CF05C80-7268-4FF9-80C4-4A224BB13EDF}|TimestampScheduler.csproj|c:\\users\\pc\\source\\repos\\uni\\sgbd\\timestampscheduler\\model\\datatuple.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CF05C80-7268-4FF9-80C4-4A224BB13EDF}|TimestampScheduler.csproj|solutionrelative:model\\datatuple.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CF05C80-7268-4FF9-80C4-4A224BB13EDF}|TimestampScheduler.csproj|c:\\users\\pc\\source\\repos\\uni\\sgbd\\timestampscheduler\\model\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CF05C80-7268-4FF9-80C4-4A224BB13EDF}|TimestampScheduler.csproj|solutionrelative:model\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 212,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OperationLogger.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\uni\\sgbd\\TimestampScheduler\\Parser\\OperationLogger.cs",
+              "RelativeDocumentMoniker": "Parser\\OperationLogger.cs",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\uni\\sgbd\\TimestampScheduler\\Parser\\OperationLogger.cs",
+              "RelativeToolTip": "Parser\\OperationLogger.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T23:31:50.792Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Parser.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\uni\\sgbd\\TimestampScheduler\\Parser\\Parser.cs",
+              "RelativeDocumentMoniker": "Parser\\Parser.cs",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\uni\\sgbd\\TimestampScheduler\\Parser\\Parser.cs",
+              "RelativeToolTip": "Parser\\Parser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T22:58:01.603Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TsScheduler.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\uni\\sgbd\\TimestampScheduler\\Service\\TsScheduler.cs",
+              "RelativeDocumentMoniker": "Service\\TsScheduler.cs",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\uni\\sgbd\\TimestampScheduler\\Service\\TsScheduler.cs",
+              "RelativeToolTip": "Service\\TsScheduler.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAgwCAAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T21:40:56.506Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Schedule.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\uni\\sgbd\\TimestampScheduler\\Model\\Schedule.cs",
+              "RelativeDocumentMoniker": "Model\\Schedule.cs",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\uni\\sgbd\\TimestampScheduler\\Model\\Schedule.cs",
+              "RelativeToolTip": "Model\\Schedule.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T21:38:38.938Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Operation.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\uni\\sgbd\\TimestampScheduler\\Model\\Operation.cs",
+              "RelativeDocumentMoniker": "Model\\Operation.cs",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\uni\\sgbd\\TimestampScheduler\\Model\\Operation.cs",
+              "RelativeToolTip": "Model\\Operation.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAAA4AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T21:34:48.772Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "out.txt",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\uni\\sgbd\\TimestampScheduler\\Data\\out.txt",
+              "RelativeDocumentMoniker": "Data\\out.txt",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\uni\\sgbd\\TimestampScheduler\\Data\\out.txt",
+              "RelativeToolTip": "Data\\out.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-07-24T21:27:23.543Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Transaction.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\uni\\sgbd\\TimestampScheduler\\Model\\Transaction.cs",
+              "RelativeDocumentMoniker": "Model\\Transaction.cs",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\uni\\sgbd\\TimestampScheduler\\Model\\Transaction.cs",
+              "RelativeToolTip": "Model\\Transaction.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T21:11:51.516Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DataTuple.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\uni\\sgbd\\TimestampScheduler\\Model\\DataTuple.cs",
+              "RelativeDocumentMoniker": "Model\\DataTuple.cs",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\uni\\sgbd\\TimestampScheduler\\Model\\DataTuple.cs",
+              "RelativeToolTip": "Model\\DataTuple.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAACsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T21:10:10.172Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\uni\\sgbd\\TimestampScheduler\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\uni\\sgbd\\TimestampScheduler\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABcAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T12:47:52.975Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 188,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "in.txt",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\uni\\sgbd\\TimestampScheduler\\Data\\in.txt",
+              "RelativeDocumentMoniker": "Data\\in.txt",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\uni\\sgbd\\TimestampScheduler\\Data\\in.txt",
+              "RelativeToolTip": "Data\\in.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-07-24T21:27:10.003Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

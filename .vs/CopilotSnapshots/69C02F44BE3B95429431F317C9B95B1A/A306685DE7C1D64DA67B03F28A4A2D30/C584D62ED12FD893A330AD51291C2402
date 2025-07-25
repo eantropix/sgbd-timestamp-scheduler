@@ -1,0 +1,95 @@
+﻿using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using TimestampScheduler.Model;
+
+namespace TimestampScheduler.Service
+{
+    public class TsScheduler
+    {
+        private string _id { get; set; } = "";
+        private readonly Dictionary<string, DataTuple> _tuples = new();
+        private readonly Dictionary<string, Transaction> _transactions = new();
+        private List<Operation> _operations = new();
+
+        public void Initialize(List<DataTuple> tuples, List<Transaction> transactions, List<Operation> operations)
+        {
+            foreach (var tuple in tuples)
+            {
+                _tuples[tuple.Id] = tuple;
+            }
+
+            foreach (var transaction in transactions)
+            {
+                _transactions[transaction.Id] = transaction;
+            }
+
+            _operations = operations;
+        }
+
+        public void CheckSchedule()
+        {
+            var scheduleTime = 0;
+            foreach (var op in _operations)
+            {
+                switch (op.Type)
+                {
+                    case "R":
+                        if (!_transactions.TryGetValue(op.TransactionId, out var transactionRead))
+                        {
+                            Console.WriteLine($"Transaction {op.TransactionId} not found for read operation.");
+                            return;
+                        }
+                        if (!_tuples.TryGetValue(op.TupleId, out var tupleRead))
+                        {
+                            Console.WriteLine($"Tuple {op.TupleId} not found for read operation.");
+                            return;
+                        }
+
+                        if (!tupleRead.CanRead(transactionRead))
+                        {
+                            Console.WriteLine("$FAILED: Read, tuple {op.TupleId}, transaction {op.TransactionId}");
+                            Console.WriteLine($"E-{_id}-ROLLBACK-{scheduleTime}");
+                            break;
+                        }
+                        // If the read is valid, update the timestamp if the transaction timestamp is smaller than the tuple tsread
+                        tupleRead.UpdateTSRead(transactionRead);
+                        Console.WriteLine($"{tupleRead.Id}: {op.Type}-{transactionRead.Id}");
+                        break;
+
+                    case "W":
+                        if (!_transactions.TryGetValue(op.TransactionId, out var transactionWrite))
+                        {
+                            Console.WriteLine($"Transaction {op.TransactionId} not found for read operation.");
+                            return;
+                        }
+                        if (!_tuples.TryGetValue(op.TupleId, out var tupleWrite))
+                        {
+                            Console.WriteLine($"Tuple {op.TupleId} not found for read operation.");
+                            return;
+                        }
+                        if (!tupleWrite.CanWrite(transactionWrite))
+                        {
+                            Console.WriteLine("$FAILED: Write, tuple {op.TupleId}, transaction {op.TransactionId}");
+                            Console.WriteLine($"E-{_id}-ROLLBACK-{scheduleTime}");
+                            break;
+                        }
+                        // If the write is valid, update the timestamp if the transaction timestamp is smaller than the tuple tswrite
+                        tupleWrite.UpdateTSWrite(transactionWrite);
+                        Console.WriteLine($"{tupleWrite.Id}: {op.Type}-{transactionWrite.Id}");
+                        break;
+                    case "C":
+                        foreach (var tuple in _tuples.Values)
+                        {
+                            tuple.Reset();
+                        }
+                        break;
+                    default:
+                        return;
+                }
+
+            }
+        }
+    }
+}

@@ -1,0 +1,34 @@
+﻿using System;
+using System.IO;
+using TimestampScheduler.Parser;
+using TimestampScheduler.Model;
+using TimestampScheduler.Service;
+
+// Parse the input file and retrieve the data
+var inputFilePath = Path.Combine("Data", "in.txt");
+var (dataTuples, transactions, schedules) = Parser.ParseInputFile(inputFilePath);
+
+Console.WriteLine("Data Tuples:");
+foreach (var tuple in dataTuples)
+    Console.WriteLine(tuple);
+
+Console.WriteLine("\nTransactions:");
+foreach (var tx in transactions)
+    Console.WriteLine($"{tx.Id}: {tx.Timestamp}");
+
+Console.WriteLine("\nSchedules:");
+foreach (var schedule in schedules)
+    Console.WriteLine(schedule);
+
+// Check all schedules using TsScheduler
+foreach (var schedule in schedules)
+{
+    Console.WriteLine($"\nChecking schedule: {schedule.Id}");
+    var scheduler = new TsScheduler();
+
+    // Initialize the scheduler with tuples, transactions, and operations
+    scheduler.Initialize(dataTuples, transactions, schedule.Operations);
+
+    // Check the schedule
+    scheduler.CheckSchedule();
+}

@@ -1,0 +1,73 @@
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using TimestampScheduler.Model;
+
+namespace TimestampScheduler.Parser
+{
+    internal class Parser
+    {
+        public static (List<DataTuple>, List<Transaction>, List<Schedule>) ParseInputFile(string filePath)
+        {
+            var lines = File.ReadAllLines(filePath);
+
+            // Parse Data Tuples
+            var dataTuples = lines[0].Split(',').Select(tuple => tuple.Trim()).Select(id => new DataTuple(id, 0, 0)).ToList();
+
+            // Parse Transactions
+            var transactionIds = lines[1].Split(',').Select(id => id.Trim()).ToList();
+
+            // Parse Transaction Timestamps
+            var timestamps = lines[2].Split(',').Select(ts => int.Parse(ts.Trim())).ToList();
+
+            var transactions = transactionIds.Zip(timestamps, (id, ts) => new Transaction(id, ts)).ToList();
+
+            // Parse Schedules
+            var schedules = new List<Schedule>();
+            for (int i = 3; i < lines.Length; i++)
+            {
+                var scheduleParts = lines[i].Split('-');
+                var scheduleId = scheduleParts[0].Trim();
+                var operations = scheduleParts[1].Split(' ').Select(op => op.Trim())
+                    .Where(op => !string.IsNullOrEmpty(op))
+                    .Select(op => ParseOperation(op))
+                    .ToList();
+
+                schedules.Add(new Schedule(scheduleId, operations));
+            }
+
+            return (dataTuples, transactions, schedules);
+        }
+
+        private static Operation ParseOperation(string operation)
+        {
+            if (operation.StartsWith("r", StringComparison.OrdinalIgnoreCase))
+            {
+                return new Operation(
+                    "R",
+                    operation.Substring(2, operation.IndexOf(')') - 2),
+                    operation.Substring(1, 1)
+                );
+            }
+            else if (operation.StartsWith("w", StringComparison.OrdinalIgnoreCase))
+            {
+                return new Operation(
+                    "W",
+                    operation.Substring(2, operation.IndexOf(')') - 2),
+                    operation.Substring(1, 1)
+                );
+            }
+            else if (operation.Equals("c", StringComparison.OrdinalIgnoreCase))
+            {
+                return new Operation(
+                    "C",
+                    null,
+                    null
+                );
+            }
+
+            throw new ArgumentException($"Invalid operation format: {operation}");
+        }
+    }
+}
